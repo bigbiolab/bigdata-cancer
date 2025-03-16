@@ -1,13 +1,10 @@
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
-
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <meta charset="utf-8">
 <meta name="generator" content="quarto-1.6.40">
-
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
-
-
-<title>Big Data in Cancer Research with R – R for Bioinformatics</title>
+<title>Big Data in Cancer Research with R</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -22,14 +19,13 @@ ul.task-list li input[type="checkbox"] {
 }
 </style>
 
-
 <script src="site_libs/quarto-nav/quarto-nav.js"></script>
 <script src="site_libs/clipboard/clipboard.min.js"></script>
 <script src="site_libs/quarto-search/autocomplete.umd.js"></script>
 <script src="site_libs/quarto-search/fuse.min.js"></script>
 <script src="site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="./">
-<link href="./schedule.html" rel="next">
+<link href="./prework.html" rel="next">
 <link href="./images/hex-logo.png" rel="icon" type="image/png">
 <script src="site_libs/quarto-html/quarto.js"></script>
 <script src="site_libs/quarto-html/popper.min.js"></script>
@@ -40,7 +36,9 @@ ul.task-list li input[type="checkbox"] {
 <script src="site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
 <link href="site_libs/bootstrap/bootstrap-cd78f12bc30cf3ee84c32fe613f93f39.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
-<script id="quarto-search-options" type="application/json">{
+<script src="site_libs/quarto-contrib/glightbox/glightbox.min.js"></script>
+<link href="site_libs/quarto-contrib/glightbox/glightbox.min.css" rel="stylesheet">
+<link href="site_libs/quarto-contrib/glightbox/lightbox.css" rel="stylesheet"><script id="quarto-search-options" type="application/json">{
   "location": "sidebar",
   "copy-button": false,
   "collapse-after": 3,
@@ -67,24 +65,21 @@ ul.task-list li input[type="checkbox"] {
     "search-label": "Search"
   }
 }</script>
-
-
 <meta property="og:title" content="Big Data in Cancer Research with R">
-<meta property="og:description" content="Homepage for Bioinformatics with R">
-<meta property="og:site_name" content="R for Bioinformatics">
+<meta property="og:description" content="Homepage for Big Data in Cancer Research with R">
+<meta property="og:image" content="https://omicscenter.github.io/RforBioinformatics/images/jubayer.jpg">
+<meta property="og:site_name" content="Big Data in Cancer Research with R">
+<meta property="og:image:alt" content="Headshot of Jubayer">
 <meta name="twitter:title" content="Big Data in Cancer Research with R">
-<meta name="twitter:description" content="Homepage for Bioinformatics with R">
+<meta name="twitter:description" content="Homepage for Big Data in Cancer Research with R">
 <meta name="twitter:image" content="https://omicscenter.github.io/RforBioinformatics//images/bioconductor_banner.jpg">
 <meta name="twitter:creator" content="@hossainlab">
 <meta name="twitter:card" content="summary_large_image">
 </head>
-
 <body class="nav-sidebar docked">
 
 <div id="quarto-search-results"></div>
-  <header id="quarto-header" class="headroom fixed-top">
-  <nav class="quarto-secondary-nav">
-    <div class="container-fluid d-flex">
+  <header id="quarto-header" class="headroom fixed-top"><nav class="quarto-secondary-nav"><div class="container-fluid d-flex">
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
@@ -95,16 +90,11 @@ ul.task-list li input[type="checkbox"] {
         <i class="bi bi-search"></i>
       </button>
     </div>
-  </nav>
-</header>
-<!-- content -->
-<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article">
+  </nav></header><!-- content --><div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-full">
 <!-- sidebar -->
-  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation docked overflow-auto">
-    <div class="pt-lg-2 mt-2 text-center sidebar-header">
+  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation docked overflow-auto"><div class="pt-lg-2 mt-2 text-center sidebar-header">
       <a href="./index.html" class="sidebar-logo-link">
-      <img src="./images/hex-logo.png" alt="" class="sidebar-logo py-0 d-lg-inline d-none">
-      </a>
+      <img src="./images/hex-logo.png" alt="" class="sidebar-logo py-0 d-lg-inline d-none"></a>
       <div class="sidebar-tools-main tools-wide">
     <a href="https://github.com/chiraltraining/" title="GitHub" class="quarto-navigation-tool px-1" aria-label="GitHub"><i class="bi bi-github"></i></a>
     <a href="https://www.facebook.com/chiralbd.org" title="Facebook" class="quarto-navigation-tool px-1" aria-label="Facebook"><i class="bi bi-facebook"></i></a>
@@ -119,16 +109,10 @@ ul.task-list li input[type="checkbox"] {
         </div>
     <div class="sidebar-menu-container"> 
     <ul class="list-unstyled mt-1">
-        <li class="sidebar-item">
+<li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./index.html" class="sidebar-item-text sidebar-link active">
  <span class="menu-text">Home</span></a>
-  </div>
-</li>
-        <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="./schedule.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Schedule</span></a>
   </div>
 </li>
         <li class="sidebar-item">
@@ -150,37 +134,35 @@ ul.task-list li input[type="checkbox"] {
   </div>
 </li>
     </ul>
-    </div>
-</nav>
-<div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
+</div>
+</nav><div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
-        <nav id="TOC" role="doc-toc" class="toc-active">
-    <h2 id="toc-title">On this page</h2>
+        <nav id="TOC" role="doc-toc" class="toc-active"><h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#overview" id="toc-overview" class="nav-link active" data-scroll-target="#overview">Overview</a>
+<li>
+<a href="#overview" id="toc-overview" class="nav-link active" data-scroll-target="#overview">Overview</a>
   <ul class="collapse">
-  <li><a href="#what-youll-learn" id="toc-what-youll-learn" class="nav-link" data-scroll-target="#what-youll-learn">What You’ll Learn?</a></li>
+<li><a href="#what-youll-learn" id="toc-what-youll-learn" class="nav-link" data-scroll-target="#what-youll-learn">What You’ll Learn?</a></li>
   <li><a href="#why-r" id="toc-why-r" class="nav-link" data-scroll-target="#why-r">Why R?</a></li>
   <li><a href="#recording-of-classes" id="toc-recording-of-classes" class="nav-link" data-scroll-target="#recording-of-classes">Recording of classes</a></li>
   <li><a href="#is-this-course-for-me" id="toc-is-this-course-for-me" class="nav-link" data-scroll-target="#is-this-course-for-me">Is this course for me?</a></li>
   <li><a href="#zoom-working-virtually" id="toc-zoom-working-virtually" class="nav-link" data-scroll-target="#zoom-working-virtually">Zoom + Working Virtually</a></li>
-  </ul></li>
+  <li><a href="#instructors" id="toc-instructors" class="nav-link" data-scroll-target="#instructors">Instructors</a></li>
+  <li><a href="#workshop-timeline" id="toc-workshop-timeline" class="nav-link" data-scroll-target="#workshop-timeline">Workshop Timeline</a></li>
   </ul>
-<div class="toc-actions"><ul><li><a href="https://github.com/omicscenter/RforBioinformatics/edit/main/index.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/omicscenter/RforBioinformatics/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></nav>
+</li>
+  </ul><div class="toc-actions"><ul><li><a href="https://github.com/omicscenter/RforBioinformatics/edit/main/index.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/omicscenter/RforBioinformatics/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></nav>
     </div>
 <!-- main -->
-<main class="content" id="quarto-document-content">
-
-<header id="title-block-header" class="quarto-title-block default">
-<div class="quarto-title">
+<main class="content column-body" id="quarto-document-content"><header id="title-block-header" class="quarto-title-block default"><div class="quarto-title">
 <h1 class="title">Big Data in Cancer Research with R (Cohort 01)</h1>
 </div>
 
 
 
-<div class="quarto-title-meta">
+<div class="quarto-title-meta column-body">
 
     
   
@@ -189,87 +171,277 @@ ul.task-list li input[type="checkbox"] {
   
 
 
-</header>
-
-
-<table class="caption-top table">
-<tbody>
+</header><table class="caption-top table"><tbody>
 <tr class="odd">
-<td style="text-align: left;">🧑 Instructor: <a href="https://hossainlab.owlstown.net/">Md. Jubayer Hossain</a></td>
+<td>🧑 Lead Instructor: <a href="https://hossainlab.owlstown.net/">Md. Jubayer Hossain</a>
+</td>
 </tr>
 <tr class="even">
-<td style="text-align: left;">🗓 View the Schedule and Curriculum on <a href="https://docs.google.com/spreadsheets/d/1nDzUXmaurfBBirs_wqfBdGKXead0YvRo2-k8b8z6Ass/edit?usp=sharing">Google Sheet</a></td>
+<td>🗓 View the Schedule and Curriculum on <a href="https://docs.google.com/spreadsheets/d/1nDzUXmaurfBBirs_wqfBdGKXead0YvRo2-k8b8z6Ass/edit?usp=sharing">Google Sheet</a>
+</td>
 </tr>
 <tr class="odd">
-<td style="text-align: left;">🏨 Medium - Zoom</td>
+<td>🏨 Medium - Zoom</td>
 </tr>
 <tr class="even">
-<td style="text-align: left;">💥 <strong>Register</strong> with <a href="https://forms.gle/ke8U9uYxXmtvsgtk7">Google Forms</a></td>
+<td>💥 <strong>Enroll</strong> with <a href="https://forms.gle/a1WpgSgBq87ErVah6">Google Forms</a>
+</td>
 </tr>
 <tr class="odd">
-<td style="text-align: left;">📝 To join private Telegram group for the course, follow instructions in the email you received after registration.</td>
+<td>📝 To join private Telegram group for the course, follow instructions in the email you received after registration.</td>
 </tr>
-</tbody>
-</table>
-<section id="overview" class="level1">
-<h1>Overview</h1>
+</tbody></table>
+<section id="overview" class="level1"><h1>Overview</h1>
 <p>This intensive, four-day workshop is designed to provide participants with a comprehensive understanding of big data analytics in cancer research using R. Attendees will gain hands-on experience in processing, visualizing, and analyzing large-scale cancer genomics datasets, specifically focusing on data from The Cancer Genome Atlas (TCGA). The workshop will cover essential skills such as data wrangling, visualization, mutation analysis, and machine learning techniques for biomarker discovery.</p>
-<section id="what-youll-learn" class="level2">
-<h2 class="anchored" data-anchor-id="what-youll-learn">What You’ll Learn?</h2>
+<section id="what-youll-learn" class="level2"><h2 class="anchored" data-anchor-id="what-youll-learn">What You’ll Learn?</h2>
 <p>By participating in this workshop, you will gain hands-on experience and comprehensive knowledge in the following areas:</p>
 <ol type="1">
-<li><strong>Overview of Big Data in Cancer Studies</strong>: Understand the significance of big data in cancer research, including sources of data and current challenges in the field.</li>
-<li><strong>Fundamentals of R Programming</strong>: Learn the basics of R programming and its application in data analysis for cancer research.</li>
-<li><strong>Data Wrangling with R</strong>: Master techniques to clean, preprocess, and manipulate cancer data to prepare it for analysis.</li>
-<li><strong>Data Visualization with R</strong>: Gain skills in visualizing complex cancer datasets using various types of graphs and plots.</li>
-<li><strong>Strategies for Working with Big Data in R</strong>: Learn strategies to efficiently handle large cancer datasets, optimizing performance in R.</li>
-<li><strong>Downloading Data from GDC Portal using TCGAbiolinks</strong>: Learn how to access and download cancer genomics data from the GDC portal using the TCGAbiolinks package.</li>
-<li><strong>Somatic Mutation Analysis with maftools</strong>: Understand how to analyze somatic mutations in cancer using the maftools package in R.</li>
-<li><strong>Differential Expression Analysis using DESeq2</strong>: Explore RNA-Seq data analysis and differential expression in cancer research using the DESeq2 package.</li>
-<li><strong>Dimensionality Reduction and Clustering Analysis</strong>: Learn how to reduce the dimensionality of large datasets and apply clustering techniques to find patterns in cancer data.</li>
-<li><strong>Survival Analysis with Kaplan-Meier Curve</strong>: Learn how to perform survival analysis and visualize results using Kaplan-Meier curves for cancer patient data.</li>
-<li><strong>TCGA Biomarker Identification using Machine Learning</strong>: Apply machine learning techniques to identify potential biomarkers for cancer using TCGA datasets.</li>
-<li><strong>Project Integration</strong>: Apply all learned skills to a final project, integrating big data tools for cancer genomics, from data wrangling to biomarker discovery.</li>
-</ol>
-</section>
-<section id="why-r" class="level2">
-<h2 class="anchored" data-anchor-id="why-r">Why R?</h2>
+<li>
+<strong>Overview of Big Data in Cancer Studies</strong>: Understand the significance of big data in cancer research, including sources of data and current challenges in the field.</li>
+<li>
+<strong>Fundamentals of R Programming</strong>: Learn the basics of R programming and its application in data analysis for cancer research.</li>
+<li>
+<strong>Data Wrangling with R</strong>: Master techniques to clean, preprocess, and manipulate cancer data to prepare it for analysis.</li>
+<li>
+<strong>Data Visualization with R</strong>: Gain skills in visualizing complex cancer datasets using various types of graphs and plots.</li>
+<li>
+<strong>Strategies for Working with Big Data in R</strong>: Learn strategies to efficiently handle large cancer datasets, optimizing performance in R.</li>
+<li>
+<strong>Downloading Data from GDC Portal using TCGAbiolinks</strong>: Learn how to access and download cancer genomics data from the GDC portal using the TCGAbiolinks package.</li>
+<li>
+<strong>Somatic Mutation Analysis with maftools</strong>: Understand how to analyze somatic mutations in cancer using the maftools package in R.</li>
+<li>
+<strong>Differential Expression Analysis using DESeq2</strong>: Explore RNA-Seq data analysis and differential expression in cancer research using the DESeq2 package.</li>
+<li>
+<strong>Dimensionality Reduction and Clustering Analysis</strong>: Learn how to reduce the dimensionality of large datasets and apply clustering techniques to find patterns in cancer data.</li>
+<li>
+<strong>Survival Analysis with Kaplan-Meier Curve</strong>: Learn how to perform survival analysis and visualize results using Kaplan-Meier curves for cancer patient data.</li>
+<li>
+<strong>TCGA Biomarker Identification using Machine Learning</strong>: Apply machine learning techniques to identify potential biomarkers for cancer using TCGA datasets.</li>
+<li>
+<strong>Project Integration</strong>: Apply all learned skills to a final project, integrating big data tools for cancer genomics, from data wrangling to biomarker discovery.</li>
+</ol></section><section id="why-r" class="level2"><h2 class="anchored" data-anchor-id="why-r">Why R?</h2>
 <ul>
 <li>R is a programming and statistical language.</li>
 <li>R is used for data Analysis and Visualization.</li>
 <li>R is simple and easy to learn, read and write.</li>
 <li>R is an example of a FLOSS (Free Libre and Open Source Software) where one can freely distribute copies of this software, read its source code, modify it, etc.</li>
-</ul>
-</section>
-<section id="recording-of-classes" class="level2">
-<h2 class="anchored" data-anchor-id="recording-of-classes">Recording of classes</h2>
+</ul></section><section id="recording-of-classes" class="level2"><h2 class="anchored" data-anchor-id="recording-of-classes">Recording of classes</h2>
 <p>Class lectures will be recorded automatically using cloud. The links will be posted to CHIRAL Classes when they are available.</p>
-</section>
-<section id="is-this-course-for-me" class="level2">
-<h2 class="anchored" data-anchor-id="is-this-course-for-me">Is this course for me?</h2>
+</section><section id="is-this-course-for-me" class="level2"><h2 class="anchored" data-anchor-id="is-this-course-for-me">Is this course for me?</h2>
 <p>If your answer to any of the following questions is “yes”, then this is the right workshop for you.</p>
 <ul>
-<li><p>Do you make summary tables in R (data, survey data, regression models, time-to-event data, adverse event reports)?</p></li>
-<li><p>Do you want your workflow to be reproducible?</p></li>
-<li><p>Are you often frustrated with the immense amount of code required to create great-looking tables in R?</p></li>
+<li>Do you make summary tables in R (data, survey data, regression models, time-to-event data, adverse event reports)?</li>
+<li>Do you want your workflow to be reproducible?</li>
+<li>Are you often frustrated with the immense amount of code required to create great-looking tables in R?</li>
 </ul>
-<p>The workshop is designed for those with some experience in R. It will be expected that you can perform basic data manipulation. Experience with the {tidyverse} and the <code>%&gt;%</code> operator is a plus, but not required.</p>
-</section>
-<section id="zoom-working-virtually" class="level2">
-<h2 class="anchored" data-anchor-id="zoom-working-virtually">Zoom + Working Virtually</h2>
+<p>The workshop is designed for those with some experience in R. It will be expected that you can perform basic data manipulation. Experience with the <a href="https://tidyverse.tidyverse.org">tidyverse</a> and the <code>%&gt;%</code> operator is a plus, but not required.</p>
+</section><section id="zoom-working-virtually" class="level2"><h2 class="anchored" data-anchor-id="zoom-working-virtually">Zoom + Working Virtually</h2>
 <ul>
 <li><p>Zoom link will be emailed to students</p></li>
 <li><p>Class sessions will be recorded and later posted</p></li>
 <li><p>We will have lectures as well as breakout room sessions to work on labs</p></li>
 <li><p>Please be aware that there is the option to use closed captioning</p></li>
-</ul>
+</ul></section><section id="instructors" class="level2"><h2 class="anchored" data-anchor-id="instructors">Instructors</h2>
+<section id="md.-jubayer-hossain" class="level4"><h4 class="anchored" data-anchor-id="md.-jubayer-hossain"><strong>Md. Jubayer Hossain</strong></h4>
+<section id="founder-executive-director-chiral" class="level5"><h5 class="anchored" data-anchor-id="founder-executive-director-chiral">Founder &amp; Executive Director, CHIRAL</h5>
+<p><img src="images/jubayer.jpg" class="img-fluid" style="float:right;padding: 0 0 0 10px;" alt="Headshot of Jubayer" width="200"><a href="https://hossainlab.github.io/">Md. Jubayer Hossain</a> is the Founder and Executive Director of <a href="https://chiralbd.org/">CHIRAL Bangladesh</a>. CHIRAL Bangladesh is a non-profit organization dedicated to health research to improve lives in Bangladesh. He aspires to maximize the quality of life of people around him by working at the intersection of education, technology, and biomedical research. Detailed research and teaching activities were found on his <a href="https://hossainlab.github.io/">website.</a></p>
+</section></section><section id="muhibullah-shahjahan" class="level4"><h4 class="anchored" data-anchor-id="muhibullah-shahjahan"><strong>Muhibullah Shahjahan</strong></h4>
+<section id="research-assistant-big-bioinformatics-lab-chiral" class="level5"><h5 class="anchored" data-anchor-id="research-assistant-big-bioinformatics-lab-chiral">Research Assistant, Big Bioinformatics Lab, CHIRAL</h5>
+<p><img src="images/muhib.jpg" class="img-fluid" style="float:right;padding: 0 0 0 10px;" alt="Headshot of Muhib" width="200"> Muhibullah Shahjahan is a researcher specializing in Cancer Bioinformatics and Machine Learning. As a Research Assistant at the Big Bioinformatics Lab of CHIRAL Bangladesh, he focuses on applying computational tools to address biological research questions. With experience in statistical analysis and R programming, he contributes to advancing biomedical data science education and supports researchers in analyzing and interpreting complex datasets.</p>
+<p><br></p>
+</section></section><section id="muhammad-mohtasim-billah-instructor" class="level4"><h4 class="anchored" data-anchor-id="muhammad-mohtasim-billah-instructor"><strong>Muhammad Mohtasim Billah, Instructor</strong></h4>
+<section id="research-assistant-big-bioinformatics-lab-chiral-1" class="level5"><h5 class="anchored" data-anchor-id="research-assistant-big-bioinformatics-lab-chiral-1">Research Assistant, Big Bioinformatics Lab, CHIRAL</h5>
+<p><a href="images/rifat.png" class="lightbox" data-gallery="quarto-lightbox-gallery-1"><img src="images/rifat.png" class="img-fluid" style="float:right;padding: 0 0 0 10px;" alt="Headshot of Rifat" width="200"></a></p>
+<p>Muhammad Mohtasim Billah is a researcher with a focus on Cancer Bioinformatics. Affiliated with the Big Bioinformatics Lab at CHIRAL Bangladesh, he applies computational approaches to study cancer biology and support data-driven research. His work involves statistical analysis and bioinformatics techniques, contributing to the understanding and management of complex biological data.</p>
+</section></section><section id="sajjad-hossain-instructor" class="level4"><h4 class="anchored" data-anchor-id="sajjad-hossain-instructor"><strong>Sajjad Hossain, Instructor</strong></h4>
+<section id="research-assistant-big-bioinformatics-lab-chiral-2" class="level5"><h5 class="anchored" data-anchor-id="research-assistant-big-bioinformatics-lab-chiral-2">Research Assistant, Big Bioinformatics Lab, CHIRAL</h5>
+<p><a href="images/sajjad.jpg" class="lightbox" data-gallery="quarto-lightbox-gallery-2"><img src="images/sajjad.jpg" class="img-fluid" style="float:right;padding: 0 0 0 10px;" alt="Headshot of Sajjad" width="200"></a></p>
+<p>Sajjad Hossen is a researcher with expertise in Cancer Bioinformatics and serves as an instructor at the Big Bioinformatics Lab, CHIRAL Bangladesh. In addition to his research endeavors, he is responsible for managing and coordinating the lab’s training programs, fostering the dissemination of advanced bioinformatics knowledge. His work focuses on computational analysis and the interpretation of complex biological datasets, contributing to capacity-building efforts and the advancement of biomedical research.</p>
+</section></section><section id="muntasim-fuad-instructor" class="level4"><h4 class="anchored" data-anchor-id="muntasim-fuad-instructor"><strong>Muntasim Fuad, Instructor</strong></h4>
+<section id="research-assistant-big-bioinformatics-lab-chiral-3" class="level5"><h5 class="anchored" data-anchor-id="research-assistant-big-bioinformatics-lab-chiral-3">Research Assistant, Big Bioinformatics Lab, CHIRAL</h5>
+<p><a href="images/fuad.jpeg" class="lightbox" data-gallery="quarto-lightbox-gallery-3"><img src="images/fuad.jpeg" class="img-fluid" style="float:right;padding: 0 0 0 10px;" alt="Headshot of Fuad" width="200"></a></p>
+<p>Muntasim Fuad is a researcher specializing in Cancer Bioinformatics. As a Research Assistant Instructor at the Big Bioinformatics Lab, CHIRAL Bangladesh, he applies computational techniques to explore complex biological data and advance cancer research. His role involves supporting research initiatives and contributing to the academic development of trainees in bioinformatics and data analysis.</p>
+</section></section></section><section id="workshop-timeline" class="level2"><h2 class="anchored" data-anchor-id="workshop-timeline">Workshop Timeline</h2>
+<div class="cell">
+<div class="cell-output-display">
+<table class="caption-top table table-sm table-striped small">
+<caption>Day 1 - Friday, April 18, 2025</caption>
+<colgroup>
+<col style="width: 25%">
+<col style="width: 48%">
+<col style="width: 26%">
+</colgroup>
+<thead><tr class="header">
+<th style="text-align: left;">Time</th>
+<th style="text-align: left;">Session</th>
+<th style="text-align: left;">Instructor</th>
+</tr></thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;">9:30 AM - 10:30 AM</td>
+<td style="text-align: left;">Overview of Big Data in Cancer Studies</td>
+<td style="text-align: left;">Md. Jubayer Hossain</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">10:30 AM - 10:35 AM</td>
+<td style="text-align: left;">Break</td>
+<td style="text-align: left;">-</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">10:35 AM - 11:05 AM</td>
+<td style="text-align: left;">Fundamentals of R</td>
+<td style="text-align: left;">Muhibullah Shahjahan</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">11:05 AM - 11:10 AM</td>
+<td style="text-align: left;">Break</td>
+<td style="text-align: left;">-</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">11:10 AM - 12:00 PM</td>
+<td style="text-align: left;">Data Wrangling with R</td>
+<td style="text-align: left;">Sajjad Hossen</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<div class="cell">
+<div class="cell-output-display">
+<table class="caption-top table table-sm table-striped small">
+<caption>Day 2 - Saturday, April 19, 2025</caption>
+<colgroup>
+<col style="width: 22%">
+<col style="width: 55%">
+<col style="width: 22%">
+</colgroup>
+<thead><tr class="header">
+<th style="text-align: left;">Time</th>
+<th style="text-align: left;">Session</th>
+<th style="text-align: left;">Instructor</th>
+</tr></thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;">9:30 AM - 10:30 AM</td>
+<td style="text-align: left;">Data Visualization with R</td>
+<td style="text-align: left;">Muntasim Fuad</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">10:30 AM - 10:35 AM</td>
+<td style="text-align: left;">Break</td>
+<td style="text-align: left;">-</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">10:35 AM - 11:05 AM</td>
+<td style="text-align: left;">Strategies for Working with Big Data in R</td>
+<td style="text-align: left;">Md. Jubayer Hossain</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">11:05 AM - 11:10 AM</td>
+<td style="text-align: left;">Break</td>
+<td style="text-align: left;">-</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">11:10 AM - 12:00 PM</td>
+<td style="text-align: left;">Download Data from GDC Portal using TCGAbiolinks</td>
+<td style="text-align: left;">Md. Jubayer Hossain</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<div class="cell">
+<div class="cell-output-display">
+<table class="caption-top table table-sm table-striped small">
+<caption>Day 3 - Friday, April 25, 2025</caption>
+<colgroup>
+<col style="width: 22%">
+<col style="width: 55%">
+<col style="width: 22%">
+</colgroup>
+<thead><tr class="header">
+<th style="text-align: left;">Time</th>
+<th style="text-align: left;">Session</th>
+<th style="text-align: left;">Instructor</th>
+</tr></thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;">9:30 AM - 10:30 AM</td>
+<td style="text-align: left;">Somatic Mutation Analysis using maftools</td>
+<td style="text-align: left;">Md. Jubayer Hossain</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">10:30 AM - 10:35 AM</td>
+<td style="text-align: left;">Break</td>
+<td style="text-align: left;">-</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">10:35 AM - 11:05 AM</td>
+<td style="text-align: left;">Differential Expression Analysis using DESeq2</td>
+<td style="text-align: left;">Md. Jubayer Hossain</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">11:05 AM - 11:10 AM</td>
+<td style="text-align: left;">Break</td>
+<td style="text-align: left;">-</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">11:10 AM - 12:00 PM</td>
+<td style="text-align: left;">Dimensionality Reduction and Clustering Analysis</td>
+<td style="text-align: left;">Md. Jubayer Hossain</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<div class="cell">
+<div class="cell-output-display">
+<table class="caption-top table table-sm table-striped small">
+<caption>Day 4 - Saturday, April 26, 2025</caption>
+<colgroup>
+<col style="width: 20%">
+<col style="width: 58%">
+<col style="width: 20%">
+</colgroup>
+<thead><tr class="header">
+<th style="text-align: left;">Time</th>
+<th style="text-align: left;">Session</th>
+<th style="text-align: left;">Instructor</th>
+</tr></thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;">9:30 AM - 10:30 AM</td>
+<td style="text-align: left;">Survival Analysis by Kaplan-Meier Curve</td>
+<td style="text-align: left;">Md. Jubayer Hossain</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">10:30 AM - 10:35 AM</td>
+<td style="text-align: left;">Break</td>
+<td style="text-align: left;">-</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">10:35 AM - 11:05 AM</td>
+<td style="text-align: left;">TCGA Biomarkers Identification using Machine Learning</td>
+<td style="text-align: left;">Md. Jubayer Hossain</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">11:05 AM - 11:10 AM</td>
+<td style="text-align: left;">Break</td>
+<td style="text-align: left;">-</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">11:10 AM - 12:00 PM</td>
+<td style="text-align: left;">Project: Integrating Big Data Skills for Cancer Genomics</td>
+<td style="text-align: left;">Md. Jubayer Hossain</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
 
 
-</section>
-</section>
-
-</main> <!-- /main -->
-<script id="quarto-html-after-body" type="application/javascript">
+</section></section></main><!-- /main --><script id="quarto-html-after-body" type="application/javascript">
 window.document.addEventListener("DOMContentLoaded", function (event) {
   const toggleBodyColorMode = (bsSheetEl) => {
     const mode = bsSheetEl.getAttribute("data-mode");
@@ -685,19 +857,16 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     }
   }
 });
-</script>
-<nav class="page-navigation">
-  <div class="nav-page nav-page-previous">
+</script><nav class="page-navigation column-body"><div class="nav-page nav-page-previous">
   </div>
   <div class="nav-page nav-page-next">
-      <a href="./schedule.html" class="pagination-link" aria-label="Schedule">
-        <span class="nav-page-text">Schedule</span> <i class="bi bi-arrow-right-short"></i>
+      <a href="./prework.html" class="pagination-link" aria-label="Prework">
+        <span class="nav-page-text">Prework</span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
 </nav>
 </div> <!-- /content -->
-<footer class="footer">
-  <div class="nav-footer">
+<footer class="footer"><div class="nav-footer">
     <div class="nav-footer-left">
 <p>This page is built with ❤️ and <a href="https://quarto.org/">Quarto</a>.</p>
 </div>   
@@ -705,12 +874,41 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       &nbsp;
     <div class="toc-actions d-sm-block d-md-none"><ul><li><a href="https://github.com/omicscenter/RforBioinformatics/edit/main/index.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/omicscenter/RforBioinformatics/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></div>
     <div class="nav-footer-right">
-<p>© Copyright 2023, Md. Jubayer Hossain</p>
+<p>© Copyright 2025, Md. Jubayer Hossain</p>
 </div>
   </div>
-</footer>
-
-
+</footer><script>var lightboxQuarto = GLightbox({"closeEffect":"zoom","descPosition":"bottom","loop":false,"openEffect":"zoom","selector":".lightbox"});
+(function() {
+  let previousOnload = window.onload;
+  window.onload = () => {
+    if (previousOnload) {
+      previousOnload();
+    }
+    lightboxQuarto.on('slide_before_load', (data) => {
+      const { slideIndex, slideNode, slideConfig, player, trigger } = data;
+      const href = trigger.getAttribute('href');
+      if (href !== null) {
+        const imgEl = window.document.querySelector(`a[href="${href}"] img`);
+        if (imgEl !== null) {
+          const srcAttr = imgEl.getAttribute("src");
+          if (srcAttr && srcAttr.startsWith("data:")) {
+            slideConfig.href = srcAttr;
+          }
+        }
+      } 
+    });
+  
+    lightboxQuarto.on('slide_after_load', (data) => {
+      const { slideIndex, slideNode, slideConfig, player, trigger } = data;
+      if (window.Quarto?.typesetMath) {
+        window.Quarto.typesetMath(slideNode);
+      }
+    });
+  
+  };
+  
+})();
+          </script>
 
 
 </body></html>

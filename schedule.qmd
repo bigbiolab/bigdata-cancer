@@ -5,20 +5,61 @@ page-layout: full
 comments: false
 toc: false
 ---
-## Instructions
-- **Receive the Invitation:** Look for the invitation to the Zoom class from your instructor. This invitation may come via email, a calendar invite. Ensure you have the meeting link or Meeting ID and Passcode (if required).
-
-- **Prepare Your Device:**
-- Make sure you have a computer, tablet, or smartphone with a stable internet connection.
-- Ensure your device has a working camera and microphone if you plan to use video and audio during the class.
 
 
 
+# Big Data in Cancer Research with R - Course Schedule
 
+## **Day 1 - Friday, April 18, 2025**
+| Time Slot               | Session                                      | Instructor              |
+|------------------------|---------------------------------------------|-------------------------|
+| 9:30 AM - 10:30 AM     | Overview of Big Data in Cancer Studies     | Md. Jubayer Hossain (JH) |
+| 10:30 AM - 10:35 AM    | **Break**                                   | -                       |
+| 10:35 AM - 11:05 AM    | Fundamentals of R                          | Muhibullah Shahjahan (MS) |
+| 11:05 AM - 11:10 AM    | **Break**                                   | -                       |
+| 11:10 AM - 12:00 PM    | Data Wrangling with R                      | Sajjad Hossen (SH)      |
 
-```{=html}
-<iframe frameborder="0" scrolling="yes" seamless="seamless" style="display:block; width:100%; height:100vh;" src="https://docs.google.com/spreadsheets/d/1nDzUXmaurfBBirs_wqfBdGKXead0YvRo2-k8b8z6Ass/edit?usp=sharing" title="Big Data"></iframe>
-```
+---
+
+## **Day 2 - Saturday, April 19, 2025**
+| Time Slot               | Session                                      | Instructor              |
+|------------------------|---------------------------------------------|-------------------------|
+| 9:30 AM - 10:30 AM     | Data Visualization with R                   | Muntasim Fuad (MF)      |
+| 10:30 AM - 10:35 AM    | **Break**                                   | -                       |
+| 10:35 AM - 11:05 AM    | Strategies for Working with Big Data in R   | Md. Jubayer Hossain (JH) |
+| 11:05 AM - 11:10 AM    | **Break**                                   | -                       |
+| 11:10 AM - 12:00 PM    | Download Data from GDC Portal using TCGAbiolinks | Md. Jubayer Hossain (JH) |
+
+---
+
+## **Day 3 - Friday, April 25, 2025**
+| Time Slot               | Session                                      | Instructor              |
+|------------------------|---------------------------------------------|-------------------------|
+| 9:30 AM - 10:30 AM     | Somatic Mutation Analysis using maftools    | Md. Jubayer Hossain (JH) |
+| 10:30 AM - 10:35 AM    | **Break**                                   | -                       |
+| 10:35 AM - 11:05 AM    | Differential Expression Analysis using DESeq2 | Md. Jubayer Hossain (JH) |
+| 11:05 AM - 11:10 AM    | **Break**                                   | -                       |
+| 11:10 AM - 12:00 PM    | Dimensionality Reduction and Clustering Analysis | Md. Jubayer Hossain (JH) |
+
+---
+
+## **Day 4 - Saturday, April 26, 2025**
+| Time Slot               | Session                                      | Instructor              |
+|------------------------|---------------------------------------------|-------------------------|
+| 9:30 AM - 10:30 AM     | Survival Analysis by Kaplan-Meier Curve     | Md. Jubayer Hossain (JH) |
+| 10:30 AM - 10:35 AM    | **Break**                                   | -                       |
+| 10:35 AM - 11:05 AM    | TCGA Biomarkers Identification using Machine Learning | Md. Jubayer Hossain (JH) |
+| 11:05 AM - 11:10 AM    | **Break**                                   | -                       |
+| 11:10 AM - 12:00 PM    | **Project: Integrating Big Data Skills for Cancer Genomics: From Data Wrangling to Biomarker Discovery Using R** | Md. Jubayer Hossain (JH) |
+
+---
+
+### **Instructor Key**  
+- **JH** – Md. Jubayer Hossain  
+- **MF** – Muntasim Fuad  
+- **MS** – Muhibullah Shahjahan  
+- **SH** – Sajjad Hossen  
+- **MBR** – Mohtasim Billah Rifat  
 
 
 

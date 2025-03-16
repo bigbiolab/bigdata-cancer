@@ -2,17 +2,18 @@
 pagetitle: "Big Data in Cancer Research with R"
 title: "Big Data in Cancer Research with R (Cohort 01)"
 page-layout: full
+lightbox: true
 editor: source
 ---
 
 ------------------------------------------------------------------------
-🧑 Instructor: [Md. Jubayer Hossain](https://hossainlab.owlstown.net/)
+🧑 Lead Instructor: [Md. Jubayer Hossain](https://hossainlab.owlstown.net/)
 
 🗓 View the Schedule and Curriculum on [Google Sheet](https://docs.google.com/spreadsheets/d/1nDzUXmaurfBBirs_wqfBdGKXead0YvRo2-k8b8z6Ass/edit?usp=sharing)
 
 🏨 Medium - Zoom
 
-💥 **Register** with [Google Forms](https://forms.gle/ke8U9uYxXmtvsgtk7) 
+💥 **Enroll** with [Google Forms](https://forms.gle/a1WpgSgBq87ErVah6) 
 
 
 📝 To join private Telegram group for the course, follow instructions in the email you received after registration.
@@ -54,12 +55,10 @@ Class lectures will be recorded automatically using cloud. The links will be pos
 If your answer to any of the following questions is "yes", then this is the right workshop for you.
 
 -   Do you make summary tables in R (data, survey data, regression models, time-to-event data, adverse event reports)?
-
 -   Do you want your workflow to be reproducible?
-
 -   Are you often frustrated with the immense amount of code required to create great-looking tables in R?
 
-The workshop is designed for those with some experience in R. It will be expected that you can perform basic data manipulation. Experience with the {tidyverse} and the `%>%` operator is a plus, but not required.
+The workshop is designed for those with some experience in R. It will be expected that you can perform basic data manipulation. Experience with the `{tidyverse}` and the `%>%` operator is a plus, but not required.
 
 ## Zoom + Working Virtually
 
@@ -72,7 +71,134 @@ The workshop is designed for those with some experience in R. It will be expecte
 -   Please be aware that there is the option to use closed captioning
 
 
+## Instructors
+
+#### **Md. Jubayer Hossain**
+##### Founder & Executive Director, CHIRAL
+
+![](images/jubayer.jpg){style="float:right;padding: 0 0 0 10px;" fig-alt="Headshot of Jubayer" width="200"}
+[Md. Jubayer Hossain](https://hossainlab.github.io/) is the Founder and Executive Director of [CHIRAL Bangladesh](https://chiralbd.org/). CHIRAL Bangladesh is a non-profit organization dedicated to health research to improve lives in Bangladesh. He aspires to maximize the quality of life of people around him by working at the intersection of education, technology, and biomedical research. Detailed research and teaching activities were found on his [website.](https://hossainlab.github.io/)  
 
 
+#### **Muhibullah Shahjahan**
+##### Research Assistant, Big Bioinformatics Lab, CHIRAL
+
+![](images/muhib.jpg){style="float:right;padding: 0 0 0 10px;" fig-alt="Headshot of Muhib" width="200"}
+Muhibullah Shahjahan is a researcher specializing in Cancer Bioinformatics and Machine Learning. As a Research Assistant at the Big Bioinformatics Lab of CHIRAL Bangladesh, he focuses on applying computational tools to address biological research questions. With experience in statistical analysis and R programming, he contributes to advancing biomedical data science education and supports researchers in analyzing and interpreting complex datasets.
+
+<br/>
+
+#### **Muhammad Mohtasim Billah, Instructor**
+##### Research Assistant, Big Bioinformatics Lab, CHIRAL
+
+![](images/rifat.png){style="float:right;padding: 0 0 0 10px;" fig-alt="Headshot of Rifat" width="200"}
+
+Muhammad Mohtasim Billah is a researcher with a focus on Cancer Bioinformatics. Affiliated with the Big Bioinformatics Lab at CHIRAL Bangladesh, he applies computational approaches to study cancer biology and support data-driven research. His work involves statistical analysis and bioinformatics techniques, contributing to the understanding and management of complex biological data.
+
+
+#### **Sajjad Hossain, Instructor**
+##### Research Assistant, Big Bioinformatics Lab, CHIRAL
+
+![](images/sajjad.jpg){style="float:right;padding: 0 0 0 10px;" fig-alt="Headshot of Sajjad" width="200"}
+
+Sajjad Hossen is a researcher with expertise in Cancer Bioinformatics and serves as an instructor at the Big Bioinformatics Lab, CHIRAL Bangladesh. In addition to his research endeavors, he is responsible for managing and coordinating the lab's training programs, fostering the dissemination of advanced bioinformatics knowledge. His work focuses on computational analysis and the interpretation of complex biological datasets, contributing to capacity-building efforts and the advancement of biomedical research.
+
+#### **Muntasim Fuad, Instructor**
+##### Research Assistant, Big Bioinformatics Lab, CHIRAL
+
+![](images/fuad.jpeg){style="float:right;padding: 0 0 0 10px;" fig-alt="Headshot of Fuad" width="200"}
+
+Muntasim Fuad is a researcher specializing in Cancer Bioinformatics. As a Research Assistant Instructor at the Big Bioinformatics Lab, CHIRAL Bangladesh, he applies computational techniques to explore complex biological data and advance cancer research. His role involves supporting research initiatives and contributing to the academic development of trainees in bioinformatics and data analysis.
+
+## Workshop Timeline 
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+library(knitr)
+```
+
+```{r}
+day1 <- data.frame(
+  "Time" = c("9:30 AM - 10:30 AM", 
+             "10:30 AM - 10:35 AM", 
+             "10:35 AM - 11:05 AM", 
+             "11:05 AM - 11:10 AM", 
+             "11:10 AM - 12:00 PM"),
+  "Session" = c("Overview of Big Data in Cancer Studies", 
+                "Break", 
+                "Fundamentals of R", 
+                "Break", 
+                "Data Wrangling with R"),
+  "Instructor" = c("Md. Jubayer Hossain", 
+                   "-", 
+                   "Muhibullah Shahjahan", 
+                   "-", 
+                   "Sajjad Hossen")
+)
+kable(day1, caption = "Day 1 - Friday, April 18, 2025", align = "l")
+```
+
+```{r}
+day2 <- data.frame(
+  "Time" = c("9:30 AM - 10:30 AM", 
+             "10:30 AM - 10:35 AM",
+             "10:35 AM - 11:05 AM", 
+             "11:05 AM - 11:10 AM",
+             "11:10 AM - 12:00 PM"),
+  "Session" = c("Data Visualization with R", 
+                "Break",
+                "Strategies for Working with Big Data in R", 
+                "Break", 
+                "Download Data from GDC Portal using TCGAbiolinks"),
+  "Instructor" = c("Muntasim Fuad",
+                   "-", 
+                   "Md. Jubayer Hossain", 
+                   "-", 
+                   "Md. Jubayer Hossain")
+)
+kable(day2, caption = "Day 2 - Saturday, April 19, 2025", align = "l")
+```
+
+
+```{r}
+day3 <- data.frame(
+  "Time" = c("9:30 AM - 10:30 AM", 
+             "10:30 AM - 10:35 AM", 
+             "10:35 AM - 11:05 AM", 
+             "11:05 AM - 11:10 AM", 
+             "11:10 AM - 12:00 PM"),
+  "Session" = c("Somatic Mutation Analysis using maftools", 
+                "Break", 
+                "Differential Expression Analysis using DESeq2", 
+                "Break", 
+                "Dimensionality Reduction and Clustering Analysis"),
+  "Instructor" = c("Md. Jubayer Hossain", 
+                   "-", 
+                   "Md. Jubayer Hossain",
+                   "-", 
+                   "Md. Jubayer Hossain")
+)
+kable(day3, caption = "Day 3 - Friday, April 25, 2025", align = "l")
+```
+
+```{r}
+day4 <- data.frame(
+  "Time" = c("9:30 AM - 10:30 AM", 
+             "10:30 AM - 10:35 AM", 
+             "10:35 AM - 11:05 AM", 
+             "11:05 AM - 11:10 AM", 
+             "11:10 AM - 12:00 PM"),
+  "Session" = c("Survival Analysis by Kaplan-Meier Curve",
+                "Break", 
+                "TCGA Biomarkers Identification using Machine Learning", 
+                "Break", 
+                "Project: Integrating Big Data Skills for Cancer Genomics"),
+  "Instructor" = c("Md. Jubayer Hossain", 
+                   "-", 
+                   "Md. Jubayer Hossain", 
+                   "-", 
+                   "Md. Jubayer Hossain")
+)
+kable(day4, caption = "Day 4 - Saturday, April 26, 2025", align = "l")
+```
 
 
