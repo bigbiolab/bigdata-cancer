@@ -1,0 +1,78 @@
+---
+pagetitle: "Big Data in Cancer Research with R"
+title: "Big Data in Cancer Research with R (Cohort 01)"
+page-layout: full
+editor: source
+---
+
+------------------------------------------------------------------------
+🧑 Instructor: [Md. Jubayer Hossain](https://hossainlab.owlstown.net/)
+
+🗓 View the Schedule and Curriculum on [Google Sheet](https://docs.google.com/spreadsheets/d/1nDzUXmaurfBBirs_wqfBdGKXead0YvRo2-k8b8z6Ass/edit?usp=sharing)
+
+🏨 Medium - Zoom
+
+💥 **Register** with [Google Forms](https://forms.gle/ke8U9uYxXmtvsgtk7) 
+
+
+📝 To join private Telegram group for the course, follow instructions in the email you received after registration.
+------------------------------------------------------------------------
+
+# Overview
+This intensive, four-day workshop is designed to provide participants with a comprehensive understanding of big data analytics in cancer research using R. Attendees will gain hands-on experience in processing, visualizing, and analyzing large-scale cancer genomics datasets, specifically focusing on data from The Cancer Genome Atlas (TCGA). The workshop will cover essential skills such as data wrangling, visualization, mutation analysis, and machine learning techniques for biomarker discovery.
+
+## What You'll Learn?
+By participating in this workshop, you will gain hands-on experience and comprehensive knowledge in the following areas:
+
+1. **Overview of Big Data in Cancer Studies**: Understand the significance of big data in cancer research, including sources of data and current challenges in the field.
+2. **Fundamentals of R Programming**: Learn the basics of R programming and its application in data analysis for cancer research.
+3. **Data Wrangling with R**: Master techniques to clean, preprocess, and manipulate cancer data to prepare it for analysis.
+4. **Data Visualization with R**: Gain skills in visualizing complex cancer datasets using various types of graphs and plots.
+5. **Strategies for Working with Big Data in R**: Learn strategies to efficiently handle large cancer datasets, optimizing performance in R.
+6. **Downloading Data from GDC Portal using TCGAbiolinks**: Learn how to access and download cancer genomics data from the GDC portal using the TCGAbiolinks package.
+7. **Somatic Mutation Analysis with maftools**: Understand how to analyze somatic mutations in cancer using the maftools package in R.
+8. **Differential Expression Analysis using DESeq2**: Explore RNA-Seq data analysis and differential expression in cancer research using the DESeq2 package.
+9. **Dimensionality Reduction and Clustering Analysis**: Learn how to reduce the dimensionality of large datasets and apply clustering techniques to find patterns in cancer data.
+10. **Survival Analysis with Kaplan-Meier Curve**: Learn how to perform survival analysis and visualize results using Kaplan-Meier curves for cancer patient data.
+11. **TCGA Biomarker Identification using Machine Learning**: Apply machine learning techniques to identify potential biomarkers for cancer using TCGA datasets.
+12. **Project Integration**: Apply all learned skills to a final project, integrating big data tools for cancer genomics, from data wrangling to biomarker discovery.
+
+## Why R?
+
+-   R is a programming and statistical language.
+-   R is used for data Analysis and Visualization.
+-   R is simple and easy to learn, read and write.
+-   R is an example of a FLOSS (Free Libre and Open Source Software) where one can freely distribute copies of this software, read its source code, modify it, etc.
+
+
+## Recording of classes
+
+Class lectures will be recorded automatically using cloud. The links will be posted to CHIRAL Classes when they are available.
+
+## Is this course for me?
+
+If your answer to any of the following questions is "yes", then this is the right workshop for you.
+
+-   Do you make summary tables in R (data, survey data, regression models, time-to-event data, adverse event reports)?
+
+-   Do you want your workflow to be reproducible?
+
+-   Are you often frustrated with the immense amount of code required to create great-looking tables in R?
+
+The workshop is designed for those with some experience in R. It will be expected that you can perform basic data manipulation. Experience with the {tidyverse} and the `%>%` operator is a plus, but not required.
+
+## Zoom + Working Virtually
+
+-   Zoom link will be emailed to students
+
+-   Class sessions will be recorded and later posted
+
+-   We will have lectures as well as breakout room sessions to work on labs
+
+-   Please be aware that there is the option to use closed captioning
+
+
+
+
+
+
